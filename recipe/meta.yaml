@@ -21,6 +21,7 @@ requirements:
     - numpy
   run:
     - python >=3.7
+    - pip
     - pymatgen >=4.4.9
     - monty >=0.9.6
     - pymongo >=2.8
