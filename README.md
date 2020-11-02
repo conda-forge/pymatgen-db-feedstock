@@ -5,9 +5,13 @@ Home: https://github.com/materialsproject/pymatgen-db
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymatgen-db-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pymatgen-db provides an addon to the Python Materials Genomics (pymatgen) library that allows the creation of Materials Project-style databases for management of materials data.
+
+Development: https://github.com/materialsproject/pymatgen-db
+
+Documentation: https://github.com/materialsproject/pymatgen-db
 
 Pymatgen-db is a database add-on for the Python Materials Genomics
 (pymatgen) materials analysis library. It enables the creation of
@@ -34,45 +38,66 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.7.____cpython</td>
+              <td>linux_64_numpy1.16python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=linux&configuration=linux_64_numpy1.16python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.8.____cpython</td>
+              <td>linux_64_numpy1.16python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=linux&configuration=linux_64_numpy1.16python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.7.____cpython</td>
+              <td>linux_64_numpy1.19python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=linux&configuration=linux_64_numpy1.19python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.8.____cpython</td>
+              <td>osx_64_numpy1.16python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.16python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_python3.7.____cpython</td>
+              <td>osx_64_numpy1.16python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=win&configuration=win_64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.16python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_python3.8.____cpython</td>
+              <td>osx_64_numpy1.19python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.19python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy1.16python3.7.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=win&configuration=win_64_numpy1.16python3.7.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy1.16python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=win&configuration=win_64_numpy1.16python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy1.19python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7464&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymatgen-db-feedstock?branchName=master&jobName=win&configuration=win_64_numpy1.19python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
