@@ -1,5 +1,5 @@
 {% set name = "pymatgen-db" %}
-{% set version = "2019.3.28" %}
+{% set version = "2021.5.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2a13ae1ec173ade1145060ec2584b20ef343d4c10d497f9da8d220d2c2cf537e
+  sha256: 2a556504481cc0b894c493f4e8f28741646ce72aa1d2c41feb6c7b9ece8898ab
 
 build:
-  number: 3
-  script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py<37]
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py<37]
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Pymatgen-db provides an addon to the Python Materials Genomics (pymatgen) library that allows the creation of Materials Project-style databases for management of materials data.'
+  summary: Pymatgen-db provides an addon to the Python Materials Genomics (pymatgen) library that allows the creation of Materials Project-style databases for management of materials data.
 
   description: |
     Pymatgen-db is a database add-on for the Python Materials Genomics 
