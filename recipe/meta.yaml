@@ -13,6 +13,8 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37]
+  entry_points:
+    - mgdb = pymatgen.cli.pmg:main
 
 requirements:
   host:
@@ -21,17 +23,18 @@ requirements:
     - numpy
   run:
     - python
-    - pip
-    - pymatgen >=4.4.9
+    - pymatgen >=2022.0.3
     - monty >=0.9.6
     - pymongo >=2.8
     - smoqe
 
 test:
   imports:
-    - matgendb
+    - pymatgen.db
   commands:
     - pip check
+  requires: 
+    - pip
 
 about:
   home: https://github.com/materialsproject/pymatgen-db
