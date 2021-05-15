@@ -1,5 +1,5 @@
 {% set name = "pymatgen-db" %}
-{% set version = "2021.5.12" %}
+{% set version = "2021.5.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2a556504481cc0b894c493f4e8f28741646ce72aa1d2c41feb6c7b9ece8898ab
+  sha256: 1e3a46af726ce2d9087cbbeefcd533364484668d39c65a66e9eae2379e818e27
 
 build:
   number: 0
@@ -21,17 +21,18 @@ requirements:
     - numpy
   run:
     - python
-    - pip
-    - pymatgen >=4.4.9
+    - pymatgen >=2022.0.3
     - monty >=0.9.6
     - pymongo >=2.8
     - smoqe
 
 test:
   imports:
-    - matgendb
+    - pymatgen.db
   commands:
     - pip check
+  requires: 
+    - pip
 
 about:
   home: https://github.com/materialsproject/pymatgen-db
