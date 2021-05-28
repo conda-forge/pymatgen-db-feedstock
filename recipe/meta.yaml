@@ -1,5 +1,5 @@
 {% set name = "pymatgen-db" %}
-{% set version = "2021.5.13" %}
+{% set version = "2021.5.28" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1e3a46af726ce2d9087cbbeefcd533364484668d39c65a66e9eae2379e818e27
+  sha256: c589c892e16e8b22a37053450b39b3d47d02557ed4293d364dcaacde8d30a1e8
 
 build:
   number: 0
@@ -31,7 +31,7 @@ test:
     - pymatgen.db
   commands:
     - pip check
-  requires: 
+  requires:
     - pip
 
 about:
