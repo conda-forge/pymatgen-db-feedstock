@@ -1,0 +1,22 @@
+From 100de0861687bb3c866009947ed8c9f2ed542c1f Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Wed, 19 Jan 2022 13:04:32 -0700
+Subject: [PATCH] Update query_engine.py
+
+---
+ pymatgen/db/query_engine.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pymatgen/db/query_engine.py b/pymatgen/db/query_engine.py
+index 452c481..cc0371e 100644
+--- a/pymatgen/db/query_engine.py
++++ b/pymatgen/db/query_engine.py
+@@ -18,7 +18,7 @@
+ import os
+ import gridfs
+ import zlib
+-from collections import OrderedDict, Iterable
++from collections.abc import OrderedDict, Iterable
+ 
+ import pymongo
+ from pymongo import MongoClient
