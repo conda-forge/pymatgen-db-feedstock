@@ -1,22 +1,23 @@
-From 100de0861687bb3c866009947ed8c9f2ed542c1f Mon Sep 17 00:00:00 2001
+From f06b35cfa664831c83aad7d78d47d2371173ddf8 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Wed, 19 Jan 2022 13:04:32 -0700
-Subject: [PATCH] Update query_engine.py
+Date: Wed, 19 Jan 2022 13:14:31 -0700
+Subject: [PATCH] Use collections.abc rather than collections
 
 ---
- pymatgen/db/query_engine.py | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ pymatgen/db/query_engine.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/pymatgen/db/query_engine.py b/pymatgen/db/query_engine.py
-index 452c481..cc0371e 100644
+index 452c481..b8ec006 100644
 --- a/pymatgen/db/query_engine.py
 +++ b/pymatgen/db/query_engine.py
-@@ -18,7 +18,7 @@
+@@ -18,7 +18,8 @@
  import os
  import gridfs
  import zlib
 -from collections import OrderedDict, Iterable
-+from collections.abc import OrderedDict, Iterable
++from collections import OrderedDict
++from collections.abc import Iterable
  
  import pymongo
  from pymongo import MongoClient
