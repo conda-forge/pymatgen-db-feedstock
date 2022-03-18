@@ -1,5 +1,5 @@
 {% set name = "pymatgen-db" %}
-{% set version = "2021.5.28" %}
+{% set version = "2022.3.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c589c892e16e8b22a37053450b39b3d47d02557ed4293d364dcaacde8d30a1e8
-  patches: 
-    - collect.patch
+  sha256: bb735e6553e9752f20a39d940418c59f31086a89a1cba39fce30b3fbe789583e
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
