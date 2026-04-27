@@ -9,7 +9,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: ca0acab590c1cc1000d745b8001ddd2e26ee56612257754ce21d96db69b0f8b2
 
 build:
@@ -19,11 +19,12 @@ build:
 
 requirements:
   host:
-    - python >3.7
+    - python ${{ python_min }}.*
     - pip
     - numpy
+    - setuptools
   run:
-    - python >3.7
+    - python >=${{ python_min }}
     - pymatgen >=2022.0.3
     - monty >=0.9.6
     - pymongo >=2.8
