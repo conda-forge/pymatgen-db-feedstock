@@ -1,0 +1,57 @@
+schema_version: 1
+
+context:
+  name: pymatgen-db
+  version: "2023.7.18"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: ca0acab590c1cc1000d745b8001ddd2e26ee56612257754ce21d96db69b0f8b2
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python >3.7
+    - pip
+    - numpy
+  run:
+    - python >3.7
+    - pymatgen >=2022.0.3
+    - monty >=0.9.6
+    - pymongo >=2.8
+    - smoqe
+
+tests:
+  - python:
+      imports:
+        - pymatgen.db
+      pip_check: true
+
+      python_version: ${{ python_min }}.*
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: Pymatgen-db provides an addon to the Python Materials Genomics (pymatgen) library that allows the creation of Materials Project-style databases for management of materials data.
+  description: |
+    Pymatgen-db is a database add-on for the Python Materials Genomics
+    (pymatgen) materials analysis library. It enables the creation of
+    Materials Project-style MongoDB databases for management of materials
+    data. A query engine is also provided to enable the easy translation
+    of MongoDB docs to useful pymatgen objects for analysis purposes.
+  homepage: https://github.com/materialsproject/pymatgen-db
+  repository: https://github.com/materialsproject/pymatgen-db
+  documentation: https://github.com/materialsproject/pymatgen-db
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
+    - shyuep
+    - mkhorton
